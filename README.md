@@ -1,6 +1,6 @@
 # example-vm-test
 
-Virtual Memory Test for U-series cores with MMU
+Virtual Memory Test for U-series cores with MMU. This is a work in progress that integrates some aspecs of freedom-metal in order to be later integrated as a software example into freedom-e-sdk.  
 
 This is not a comprehensive virtual memory test.  This test simply sets up
 translation on a single CPU (hart) which enters User mode and runs some
