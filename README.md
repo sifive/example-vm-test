@@ -1,7 +1,6 @@
 # example-vm-test
 
-
-= Virtual Memory Test for U-series cores with MMU
+Virtual Memory Test for U-series cores with MMU
 
 This is not a comprehensive virtual memory test.  This test simply sets up
 translation on a single CPU (hart) which enters User mode and runs some
@@ -57,7 +56,7 @@ a page related fault, it will wind up in handle_trap() handler.  If an exception
 occurs that is not delegate to Supervisor mode, then the hart will wind up
 in the trap_vector() routine.  
 
-= Build Info
+## Build Info
 
 This was initially tested on the HiFive Unleashed board which contains the FU540 
 SoC containing 5 harts (1x E51 + 4x U54).  The details below describe information
@@ -83,7 +82,7 @@ Go to SiFive Tools -> Create a New Freedom E SDK Software Project.  Point
 the wizard to the freedom-e-sdk path in your tarball.  Make sure to modify
 the Makefile to use LINK_TARGET=scratchpad in the project.
 
-== For hardware debug:
+## For hardware debug:
 A custom openocd.cfg file is required within Freedom Studio enable SMP session, and
 a specific configuration within Freedom Studio to enable a true SMP multi-core debug
 session.  Contact SiFive support for more information on this configuration.  
