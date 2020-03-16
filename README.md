@@ -14,9 +14,13 @@ This test is targeted to run on SiFive U-series cores which contain an MMU.
 For example, a U74MC design contains 5 harts (CPUs).  
 
 hart 0 - S76 - No Supervisor mode and no MMU.  Not part of VM test
+
 hart 1 - U74 with MMU.  This hart sets up translation
+
 hart 2 - U74 with MMU.  This hart run coherency_torture()
+
 hart 3 - U74 with MMU.  This hart run coherency_torture()
+
 hart 4 - U74 with MMU.  This hart run coherency_torture()
 
 The coherency_torture() routine is a simple routine that causes coherence misses
